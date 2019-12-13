@@ -1,5 +1,7 @@
 #!/bin/sh
 
+# 安装vim
+sudo apt-get install vim
 
 # 安装build-essential、cmake、git和pkg-config
 sudo apt-get install build-essential cmake git pkg-config
