@@ -1,6 +1,18 @@
 
 # 树莓派4b相关记录
 
+## 目录
+<ol>
+	<li><a href="#常用库安装">常用库安装</a></li>
+    <li><a href="#开启开机无显示器 `SSHD` 登录">开启开机无显示器 `SSHD` 登录</a></li>
+    <li><a href="#无线网络相关">无线网络相关</a></li>
+    <li><a href="#安装 `tensorflowlite-bin` 或者 `tensorflow`">安装 `tensorflowlite-bin` 或者 `tensorflow`</a></li>
+    <li><a href="#安装 sambda 当简单的 nas">安装 sambda 当简单的 nas</a></li>
+    <li><a href="#安装 minidlna 当 dlna 服务器">安装 minidlna 当 dlna 服务器</a></li>
+    <li><a href="#配置自己的服务，所有systemd启动的linux 都能这么干">配置自己的服务，所有systemd启动的linux 都能这么干</a></li>
+    <li><a href="#树莓派系统备份及恢复">树莓派系统备份及恢复</a></li>
+</ol>
+
 
 ## 常用库安装
 ```
@@ -64,6 +76,24 @@ sudo apt-get install python-dev python3-dev
             
             
 ```
+
+
+----------------------
+
+## 无线网络相关
+
+### 查看网络状态
+- 命令`sudo iw dev wlan0 info`
+- 要获取station 的统计信息，如发送/接收的字节，最后发送的比特率（包括MCS率）
+> sudo iw dev wlan0 station dump
+
+### 扫描无线网络
+- 运行 `sudo iw dev wlan0 scan`
+- 只看SSID `sudo iw dev wlan0 scan|grep 'SSID'`
+
+
+
+----------------------
 
 
 ## 安装 `tensorflowlite-bin` 或者 `tensorflow`
@@ -370,3 +400,5 @@ $ sudo make DESTDIR=/usr install
 
 ## 安装放歌的 xmms2 
 - `sudo apt-get install xmms2`
+
+
