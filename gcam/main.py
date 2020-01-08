@@ -272,7 +272,7 @@ class GCamService(BaseObject):
             pass
 
         # 指定的人出现
-        if '吴乐' in current_person:
+        if '呵呵' in current_person:
             msg = NoticeMsg()
             msg.msg_title = '孩子放学到家了'
             msg.msg_body = "{}]您家{}孩子，安全到家了".format(msg.msg_time.strftime('%Y/%m/%d %H:%M:%S'), 'xxxx')
