@@ -476,8 +476,6 @@ class GCamService(BaseObject):
             pass
 
 if __name__ == '__main__':
-    # TT = MailSender()
-    # TT.email('你们家娃到家了！！！',  mail_to='15810928108@139.com')
     T = GCamService()
     # T.run()
     T.run_with_model()
