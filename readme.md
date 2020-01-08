@@ -3,15 +3,31 @@
 
 ## 目录
 <ol>
+    <li><a href="#gcam简介">gcam简介</a></li>
 	<li><a href="#常用库安装">常用库安装</a></li>
-    <li><a href="#开启开机无显示器 `SSHD` 登录">开启开机无显示器 `SSHD` 登录</a></li>
+    <li><a href="#开启开机无显示器 SSHD 登录">开启开机无显示器 SSHD 登录</a></li>
     <li><a href="#无线网络相关">无线网络相关</a></li>
-    <li><a href="#安装 `tensorflowlite-bin` 或者 `tensorflow`">安装 `tensorflowlite-bin` 或者 `tensorflow`</a></li>
+    <li><a href="#安装 tensorflowlite-bin 或者 tensorflow">安装 tensorflowlite-bin 或者 tensorflow</a></li>
     <li><a href="#安装 sambda 当简单的 nas">安装 sambda 当简单的 nas</a></li>
     <li><a href="#安装 minidlna 当 dlna 服务器">安装 minidlna 当 dlna 服务器</a></li>
     <li><a href="#配置自己的服务，所有systemd启动的linux 都能这么干">配置自己的服务，所有systemd启动的linux 都能这么干</a></li>
     <li><a href="#树莓派系统备份及恢复">树莓派系统备份及恢复</a></li>
 </ol>
+
+
+## gcam简介
+
+### 直接看代码 
+[gcam](https://github.com/ghostwwl/my_raspbian/tree/master/gcam)
+
+
+### 识别指定的人 执行指定的操作
+
+- 可选操作
+    - server酱 微信通知
+    - 邮件通知
+    - 出现指定的人录像
+    - 出现指定的人拍照 
 
 
 ## 常用库安装
@@ -49,7 +65,7 @@ sudo apt-get install python-dev python3-dev
 
 ```
 
-## 开启开机无显示器 `SSHD` 登录
+## 开启开机无显示器 SSHD 登录
 
 - 树莓派4b 默认是不开启sshd登录的， 以前版本的是默认开启的
 - 开启方法
@@ -96,7 +112,7 @@ sudo apt-get install python-dev python3-dev
 ----------------------
 
 
-## 安装 `tensorflowlite-bin` 或者 `tensorflow`
+## 安装 tensorflowlite-bin 或者 tensorflow
 
 - [https://github.com/PINTO0309/TensorflowLite-bin](https://github.com/PINTO0309/TensorflowLite-bin)
 - [https://github.com/PINTO0309/Tensorflow-bin](https://github.com/PINTO0309/Tensorflow-bin)
