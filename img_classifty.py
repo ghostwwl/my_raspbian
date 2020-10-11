@@ -152,6 +152,7 @@ def run_webcam():
     video_capture.set(cv2.CAP_PROP_FPS, 30)
 
     # print(width, height)
+    labels = load_labels(label_file)
 
     last_label = ''
     while 1:
@@ -170,7 +171,6 @@ def run_webcam():
         output_data = interpreter.get_tensor(output_details[0]['index'])
         results = np.squeeze(output_data)
         top_k = results.argsort()[-3:][::-1]
-        labels = load_labels(label_file)
 
 
         labelname = ""
@@ -234,6 +234,7 @@ def run_dir(dir_name = '/home/pi/图片/test/'):
 
     import glob, os
     image_files = glob.glob(os.path.join(dir_name, '*'))
+    labels = load_labels(args.label_file)
 
     for imagef in image_files:
         print('\n\n识别图片: `{}`'.format(imagef))
@@ -254,7 +255,6 @@ def run_dir(dir_name = '/home/pi/图片/test/'):
         output_data = interpreter.get_tensor(output_details[0]['index'])
         results = np.squeeze(output_data)
         top_k = results.argsort()[-3:][::-1]
-        labels = load_labels(args.label_file)
 
         table = PrettyTable()
         table.field_names = ["置信度", "标签id", '标签名']
