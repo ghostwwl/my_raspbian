@@ -14,7 +14,7 @@ EMAIL_CFG:
   smtp_password: 'sina×××××××'
 
 FAMILY_MEMBERS:
-  '吴乐':
-    'wechat': 'https://sc.ftqq.com/SCU38351T8f9d11ed939b6d976e0781465c259e468313b.send?{0}' # 自己去申请
-    'email': 'ghostwwl@139.com'
+  'xxx':
+    'wechat': 'https://sc.ftqq.com/SCU38351T8f9d11ed939xb6d976e0781465c259e468313b.send?{0}' # 自己去申请
+    'email': 'xxxx@139.com'
 
